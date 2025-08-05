@@ -20,6 +20,8 @@ Acest proiect oferă operații matematice de bază (putere, Fibonacci, factorial
 python -m venv venv
 # Linux/macOS
 source venv/bin/activate
+# Windows CMD
+venv\Scripts\activate.bat
 ```
 
 ### 2. Instalează dependențele:
