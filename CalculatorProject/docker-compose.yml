@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  mathops:
+    build: .
+    container_name: mathops-service
+    ports:
+      - "8000:8000"
+    environment:
+      MATHOPS_USERNAME: admin
+      MATHOPS_PASSWORD: secret
+      MATHOPS_ENABLE_CACHE: "true"
+    volumes:
+      - ./operations.db:/code/operations.db
+      - ./logs:/code/logs
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: app/web/Dockerfile
+    container_name: flask-frontend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mathops
+    environment:
+      - API_URL=http://mathops:8000

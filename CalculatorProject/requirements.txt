@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+click
+requests
+pydantic
+flake8
+prometheus-fastapi-instrumentator

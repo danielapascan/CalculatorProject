@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# SQLite database
+*.db
+operations.db
+
+# Log files
+logs/
+*.log
+
+# PyCharm project files
+.idea/
+
+# VSCode project files
+.vscode/
+
+# Docker
+*.tar
+*.pid
+*.sock
+
+# Flask / FastAPI auto reload
+*.reload
+
+# Node / frontend junk (if added later)
+node_modules/
+dist/
+build/
+
+# Python test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mac / Linux / Windows system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# dotenv
+.env

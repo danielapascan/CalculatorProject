@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f3f4f6;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .button-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .calc-button {
+      background-color: #f97316;
+      color: white;
+      border: none;
+      padding: 40px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      width: 150px;
+      height: 150px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .calc-button:hover {
+      background-color: #ea580c;
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .small-button {
+      width: 120px;
+      height: 50px;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .small-button.orange {
+      background-color: #f97316;
+    }
+
+    .small-button.gray {
+      background-color: #6b7280;
+    }
+
+    .small-button.orange:hover {
+      background-color: #ea580c;
+    }
+
+    .small-button.gray:hover {
+      background-color: #4b5563;
+    }
+
+    input {
+      display: block;
+      margin: 15px auto;
+      padding: 16px;
+      font-size: 20px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    #result-box {
+      margin-top: 30px;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #1f2937;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculator</h1>
+
+  <div id="menu" class="button-grid">
+    <button class="calc-button" onclick="showForm('fibonacci')">Fibonacci</button>
+    <button class="calc-button" onclick="showForm('factorial')">Factorial</button>
+    <button class="calc-button" onclick="showForm('pow')">Power</button>
+  </div>
+
+  <div id="form-section" style="display: none;">
+    <form id="calc-form" onsubmit="calculate(event)">
+      <div id="form-fields"></div>
+        <div class="form-buttons">
+          <button type="submit" class="small-button orange">Calculate</button>
+          <button type="button" onclick="clearFields()" class="small-button gray">Clear</button>
+          <button type="button" onclick="goBack()" class="small-button gray">Back</button>
+        </div>
+    </form>
+    <div id="result-box" style="display: none;"></div>
+  </div>
+
+  <script>
+    const API_URL = "http://localhost:8000";
+    let currentOperation = "";
+
+    function clearFields() {
+      if (currentOperation === "pow") {
+        document.getElementById("x").value = "";
+        document.getElementById("y").value = "";
+      } else {
+        document.getElementById("n").value = "";
+      }
+
+      document.getElementById("result-box").style.display = "none";
+       }
+
+    function showForm(op) {
+      currentOperation = op;
+      document.getElementById("menu").style.display = "none";
+      document.getElementById("form-section").style.display = "block";
+
+      const fields = document.getElementById("form-fields");
+      fields.innerHTML = "";
+      document.getElementById("result-box").style.display = "none";
+
+      if (op === "pow") {
+        fields.innerHTML = `
+          <input type="number" step="any" id="x" placeholder="Base (x)" required>
+          <input type="number" step="any" id="y" placeholder="Exponent (y)" required>
+        `;
+      } else {
+        fields.innerHTML = `
+          <input type="number" id="n" placeholder="Enter n" required>
+        `;
+      }
+    }
+
+    function goBack() {
+      document.getElementById("form-section").style.display = "none";
+      document.getElementById("menu").style.display = "flex";
+      document.getElementById("result-box").style.display = "none";
+    }
+
+    async function calculate(event) {
+      event.preventDefault();
+      let payload, endpoint;
+
+      if (currentOperation === "pow") {
+        const x = parseFloat(document.getElementById("x").value);
+        const y = parseFloat(document.getElementById("y").value);
+        payload = { x, y };
+        endpoint = `${API_URL}/pow`;
+      } else {
+        const n = parseInt(document.getElementById("n").value);
+        payload = { n };
+        endpoint = `${API_URL}/${currentOperation}`;
+      }
+
+      try {
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        const resultBox = document.getElementById("result-box");
+        resultBox.style.display = "inline-block";
+        resultBox.innerText = `Result: ${data.result}`;
+      } catch (err) {
+        const resultBox = document.getElementById("result-box");
+        resultBox.style.display = "inline-block";
+        resultBox.innerText = "Error: " + err.message;
+      }
+    }
+  </script>
+</body>
+</html>

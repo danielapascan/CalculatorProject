@@ -1,0 +1,136 @@
+2025-07-29 08:08:45,996 | INFO | app.routes.pow | Received pow request: x=2.0, y=5.0
+2025-07-29 08:08:45,997 | INFO | app.routes.pow | Result: 32.0
+2025-07-29 08:16:42,431 | INFO | app.routes.factorial | Received factorial request: n=5
+2025-07-29 08:16:42,432 | INFO | app.routes.factorial | Calculated factorial(5) = 120
+2025-07-29 08:16:42,445 | INFO | app.routes.factorial | Factorial operation saved to DB.
+2025-07-29 08:16:52,215 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 08:16:52,216 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 08:16:52,231 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 08:29:59,029 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 08:29:59,029 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 08:29:59,040 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 08:37:15,725 | INFO | app.routes.admin | User 'admin' requested DB clear.
+2025-07-29 08:37:15,735 | INFO | app.routes.admin | DB cleared successfully.
+2025-07-29 08:37:28,263 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 08:37:28,264 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 08:37:28,280 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 08:45:57,596 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 08:45:57,597 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 08:45:57,612 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 08:52:57,903 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 08:52:57,904 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 08:52:57,917 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 09:11:44,420 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 09:11:44,421 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 09:11:44,433 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:06:38,532 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 10:06:38,533 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 10:06:38,549 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:07:40,240 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:07:40,240 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:07:40,252 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:15,103 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:15,104 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:15,115 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:31,324 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:31,325 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:31,340 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:38,359 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:38,360 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:38,380 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:38,528 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:38,529 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:38,547 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:38,676 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:38,676 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:38,690 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:38,824 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:38,825 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:38,837 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:38,980 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:38,981 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:38,995 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:39,121 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:39,122 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:39,135 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:39,253 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:39,253 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:39,268 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:39,407 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:39,408 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:39,426 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:39,545 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:39,546 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:39,566 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:39,685 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:39,685 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:39,700 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:08:39,841 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:08:39,842 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:08:39,855 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:10:36,418 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:10:36,419 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:10:36,435 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:10:39,435 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:10:39,436 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:10:39,450 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:10:39,615 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:10:39,615 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:10:39,633 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:10:39,758 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:10:39,758 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:10:39,778 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:10:39,894 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:10:39,895 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:10:39,911 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:10:40,047 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:10:40,048 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:10:40,063 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:10:40,204 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 10:10:40,204 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 10:10:40,217 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:37:41,620 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 10:37:41,621 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 10:37:41,638 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:37:54,232 | INFO | app.routes.admin | User 'admin' requested DB clear.
+2025-07-29 10:37:54,247 | INFO | app.routes.admin | DB cleared successfully.
+2025-07-29 10:38:06,010 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 10:38:06,010 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 10:38:06,023 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:42:10,516 | INFO | app.routes.pow | Received pow request: x=2.0, y=3.0
+2025-07-29 10:44:38,153 | INFO | app.routes.pow | Received pow request: x=2.0, y=3.0
+2025-07-29 10:44:38,154 | INFO | app.routes.pow | Result: 8.0
+2025-07-29 10:48:50,256 | INFO | app.routes.pow | Received pow request: x=3.0, y=4.0
+2025-07-29 10:48:50,257 | INFO | app.routes.pow | Result: 81.0
+2025-07-29 10:51:20,019 | INFO | app.routes.pow | Received pow request: x=2.0, y=3.0
+2025-07-29 10:51:20,020 | INFO | app.routes.pow | Result: 8.0
+2025-07-29 10:51:24,948 | INFO | app.routes.pow | Received pow request: x=4.0, y=6.0
+2025-07-29 10:51:24,948 | INFO | app.routes.pow | Result: 4096.0
+2025-07-29 10:51:36,795 | INFO | app.routes.factorial | Received factorial request: n=3
+2025-07-29 10:51:36,795 | INFO | app.routes.factorial | Calculated factorial(3) = 6
+2025-07-29 10:51:36,810 | INFO | app.routes.factorial | Factorial operation saved to DB.
+2025-07-29 10:51:59,504 | INFO | app.routes.factorial | Received factorial request: n=4
+2025-07-29 10:51:59,504 | INFO | app.routes.factorial | Calculated factorial(4) = 24
+2025-07-29 10:51:59,542 | INFO | app.routes.factorial | Factorial operation saved to DB.
+2025-07-29 10:52:07,471 | INFO | app.routes.fibonacci | Received fibonacci request: n=10
+2025-07-29 10:52:07,471 | INFO | app.routes.fibonacci | Calculated fibonacci(10) = 55
+2025-07-29 10:52:07,483 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:55:02,967 | INFO | app.routes.fibonacci | Received fibonacci request: n=5
+2025-07-29 10:55:02,968 | INFO | app.routes.fibonacci | Calculated fibonacci(5) = 5
+2025-07-29 10:55:02,981 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 10:55:18,823 | INFO | app.routes.factorial | Received factorial request: n=10
+2025-07-29 10:55:18,823 | INFO | app.routes.factorial | Calculated factorial(10) = 3628800
+2025-07-29 10:55:18,838 | INFO | app.routes.factorial | Factorial operation saved to DB.
+2025-07-29 10:55:26,587 | INFO | app.routes.pow | Received pow request: x=2.0, y=3.0
+2025-07-29 10:55:26,588 | INFO | app.routes.pow | Result: 8.0
+2025-07-29 10:56:10,853 | INFO | app.routes.admin | User 'admin' requested DB clear.
+2025-07-29 10:56:10,868 | INFO | app.routes.admin | DB cleared successfully.
+2025-07-29 14:42:05,358 | INFO | app.routes.fibonacci | Received fibonacci request: n=4
+2025-07-29 14:42:05,359 | INFO | app.routes.fibonacci | Calculated fibonacci(4) = 3
+2025-07-29 14:42:05,375 | INFO | app.routes.fibonacci | Fibonacci operation saved to DB.
+2025-07-29 14:42:26,454 | INFO | app.routes.factorial | Received factorial request: n=790978877
+2025-07-29 14:43:00,627 | INFO | app.routes.pow | Received pow request: x=7890.0, y=6789.0
+2025-07-29 14:43:16,193 | INFO | app.routes.pow | Received pow request: x=-8.0, y=6.0
+2025-07-29 14:43:16,193 | INFO | app.routes.pow | Result: 262144.0
+2025-07-29 14:43:26,829 | INFO | app.routes.pow | Received pow request: x=-8.0, y=5.0
+2025-07-29 14:43:26,830 | INFO | app.routes.pow | Result: -32768.0
