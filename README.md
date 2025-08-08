@@ -137,3 +137,7 @@ Setările sunt controlate prin `app/settings.py` și variabile de mediu:
 
 - `MATHOPS_USERNAME`, `MATHOPS_PASSWORD`
 - `MATHOPS_ENABLE_CACHE=true` – activează `@lru_cache`
+
+## Membrii
+
+Pascan Daniela Maria si Sleam Sebastian-Cristian
